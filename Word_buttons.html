@@ -1,0 +1,41 @@
+<html>
+
+<head>
+</head>
+
+<script>
+	function word_buttons(){
+		c = document.getElementById("w").value;	
+		for (var i = 0; i<c.length; i++){
+			const btn = document.createElement('button');
+			btn.innerText = c[i];
+			document.body.appendChild(btn);
+		}
+	
+	
+		//const btn = document.createElement('button');
+		//btn.innerText = "New Button";
+		//document.body.appendChild(btn);
+	}
+
+
+</script>
+
+
+<body>
+<center>
+<input type="textbox" id="w" placeholder="Enter your text" /> 
+<br></br>
+<input type="button" value="Convert" onclick="word_buttons()" />
+<br></br>
+
+</center>
+
+
+
+
+
+
+</body>
+
+</html>
